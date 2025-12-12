@@ -1,12 +1,60 @@
+# Core Flask dependencies
 Flask==3.0.0
 flask-cors==4.0.0
-groq==0.4.1
-yt-dlp==2023.10.13
 python-dotenv==1.0.0
+Werkzeug==3.0.1
+
+# HTTP clients
 httpx>=0.24.0,<0.26.0
 requests>=2.31.0
 urllib3>=2.0.0
 certifi>=2023.7.22
 charset-normalizer>=3.2.0
 idna>=3.4
-Werkzeug==3.0.1
+
+# YouTube download
+yt-dlp>=2023.10.13
+
+# Groq API for summarization (FREE)
+groq==0.4.1
+
+# =============================================================================
+# MULTILINGUAL SUPPORT (All FREE, runs locally)
+# =============================================================================
+
+# PyTorch - Core ML framework
+# Note: Install CPU version to save space: pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# Hugging Face Transformers - Model loading
+transformers>=4.36.0
+
+# Tokenization for NLLB
+sentencepiece>=0.1.99
+
+# Audio processing
+soundfile>=0.12.0
+librosa>=0.10.0
+
+# Language detection
+langdetect>=1.0.9
+
+# =============================================================================
+# NOTES FOR INSTALLATION
+# =============================================================================
+#
+# 1. FFmpeg is required for audio extraction:
+#    Windows: winget install FFmpeg
+#    Ubuntu: sudo apt install ffmpeg
+#    Mac: brew install ffmpeg
+#
+# 2. For CPU-only installation (saves ~5GB disk space):
+#    pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# 3. First run will download models (~5GB total):
+#    - Whisper-small: ~500MB
+#    - NLLB-200-distilled: ~2.4GB
+#
+# 4. Minimum RAM: 8GB (16GB recommended)
+#
