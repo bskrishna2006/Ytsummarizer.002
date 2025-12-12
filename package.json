@@ -1,0 +1,23 @@
+{
+  "name": "youtube-summarizer-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack YouTube video summarizer with Flask backend and React frontend",
+  "main": "index.js",
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File setup.ps1",
+    "backend": "cd backend && python app.py",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "youtube",
+    "summarizer",
+    "ai",
+    "groq",
+    "llama",
+    "react",
+    "flask"
+  ],
+  "author": "",
+  "license": "MIT"
+}
